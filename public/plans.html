@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
         <div class="container">
             <div class="pricing-grid">
                 <!-- Trial Surge -->
-                <div class="pricing-card" id="trial">
+                <div class="pricing-card clickable-card" id="trial" onclick="window.location.href='plan-trial-surge.html'">
                     <div class="card-header">
                         <h3 class="plan-name">Trial Surge</h3>
                         <div class="plan-price">
@@ -91,14 +91,17 @@
                         </ul>
                     </div>
                     <div class="card-action">
-                        <button class="btn btn-primary btn-purchase" id="checkout-trial">
+                        <button class="btn btn-primary btn-purchase" id="checkout-trial" onclick="event.stopPropagation()">
                             Purchase Now
                         </button>
+                        <a href="plan-trial-surge.html" class="btn btn-outline" style="margin-top: 0.5rem;">
+                            Learn More
+                        </a>
                     </div>
                 </div>
 
                 <!-- Accelerate Basics -->
-                <div class="pricing-card" id="accelerate">
+                <div class="pricing-card clickable-card" id="accelerate" onclick="window.location.href='plan-accelerate.html'">
                     <div class="card-header">
                         <h3 class="plan-name">Accelerate Basics</h3>
                         <div class="plan-price">
@@ -144,7 +147,7 @@
                 </div>
 
                 <!-- Performance Expansion -->
-                <div class="pricing-card featured" id="performance">
+                <div class="pricing-card featured clickable-card" id="performance" onclick="window.location.href='plan-performance.html'">
                     <div class="featured-badge">Most Popular</div>
                     <div class="card-header">
                         <h3 class="plan-name">Performance Expansion</h3>
@@ -190,14 +193,17 @@
                         </ul>
                     </div>
                     <div class="card-action">
-                        <a href="schedule.html" class="btn btn-primary">
+                        <a href="schedule.html" class="btn btn-primary" onclick="event.stopPropagation()">
                             Schedule a Call
+                        </a>
+                        <a href="plan-performance.html" class="btn btn-outline" style="margin-top: 0.5rem;">
+                            Learn More
                         </a>
                     </div>
                 </div>
 
                 <!-- Vanta Mode -->
-                <div class="pricing-card premium" id="vanta-mode">
+                <div class="pricing-card premium clickable-card" id="vanta-mode" onclick="window.location.href='plan-vanta-mode.html'">
                     <div class="card-header">
                         <h3 class="plan-name">Vanta Mode</h3>
                         <div class="plan-price">
@@ -248,8 +254,11 @@
                         </ul>
                     </div>
                     <div class="card-action">
-                        <a href="schedule.html" class="btn btn-premium">
+                        <a href="schedule.html" class="btn btn-premium" onclick="event.stopPropagation()">
                             Schedule a Call
+                        </a>
+                        <a href="plan-vanta-mode.html" class="btn btn-outline" style="margin-top: 0.5rem;">
+                            Learn More
                         </a>
                     </div>
                 </div>
