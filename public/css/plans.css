@@ -58,6 +58,10 @@
     overflow: hidden;
 }
 
+.pricing-card.clickable-card {
+    cursor: pointer;
+}
+
 .pricing-card::before {
     content: '';
     position: absolute;
@@ -317,5 +321,420 @@
     
     .amount {
         font-size: 2.5rem;
+    }
+}
+
+/* Plan Detail Pages */
+.plan-detail-hero {
+    padding: 12rem 0 6rem;
+    background: var(--primary-black);
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-detail-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+}
+
+.plan-detail-hero.featured::before {
+    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.15) 0%, transparent 50%);
+}
+
+.plan-detail-hero.premium::before {
+    background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+}
+
+.plan-detail-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.plan-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--accent-blue);
+    border-radius: 50px;
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan-badge.popular {
+    background: rgba(0, 212, 255, 0.2);
+    color: var(--accent-blue);
+    animation: pulse 2s infinite;
+}
+
+.plan-badge.premium {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+.plan-detail-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--text-white) 0%, var(--accent-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plan-detail-hero.premium .plan-detail-title {
+    background: linear-gradient(to right, var(--text-white) 0%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plan-detail-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.plan-detail-price .currency {
+    font-size: 2rem;
+    color: var(--text-light-gray);
+}
+
+.plan-detail-price .amount {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-white);
+}
+
+.plan-detail-price .period {
+    font-size: 1.5rem;
+    color: var(--text-light-gray);
+}
+
+.plan-detail-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light-gray);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.plan-detail-cta {
+    margin-bottom: 2rem;
+}
+
+.guarantee-text {
+    margin-top: 1rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* Plan Includes Section */
+.plan-includes {
+    padding: 6rem 0;
+    background: var(--secondary-black);
+}
+
+.includes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.premium-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.include-item {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-gray);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.include-item:hover {
+    border-color: var(--accent-blue);
+    background: rgba(0, 212, 255, 0.02);
+    transform: translateY(-5px);
+}
+
+.include-item.premium:hover {
+    border-color: #FFD700;
+    background: rgba(255, 215, 0, 0.02);
+}
+
+.include-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.include-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.include-item p {
+    color: var(--text-light-gray);
+    line-height: 1.6;
+}
+
+/* Process Timeline */
+.process-timeline {
+    padding: 6rem 0;
+    background: var(--primary-black);
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.timeline-item {
+    text-align: center;
+    position: relative;
+}
+
+.timeline-number {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-blue);
+    color: var(--primary-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 auto 1.5rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.timeline-content p {
+    color: var(--text-light-gray);
+    line-height: 1.5;
+}
+
+/* Perfect For Section */
+.perfect-for {
+    padding: 6rem 0;
+    background: var(--secondary-black);
+}
+
+.perfect-for-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.perfect-for-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-gray);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.perfect-for-item:hover {
+    border-color: var(--accent-blue);
+    background: rgba(0, 212, 255, 0.02);
+    transform: translateY(-5px);
+}
+
+.perfect-for-item.premium:hover {
+    border-color: #FFD700;
+    background: rgba(255, 215, 0, 0.02);
+}
+
+.perfect-for-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.perfect-for-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.perfect-for-item p {
+    color: var(--text-light-gray);
+    line-height: 1.5;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 6rem 0;
+    background: var(--primary-black);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-gray);
+    border-radius: 16px;
+}
+
+.testimonial-content {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: var(--text-light-gray);
+    line-height: 1.6;
+}
+
+.testimonial-author strong {
+    color: var(--text-white);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-author span {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* Plan CTA Section */
+.plan-cta-section {
+    padding: 6rem 0;
+    background: var(--secondary-black);
+    text-align: center;
+}
+
+.plan-cta-section.premium {
+    background: linear-gradient(135deg, var(--secondary-black) 0%, rgba(255, 215, 0, 0.05) 100%);
+}
+
+.plan-cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+}
+
+.plan-cta-content p {
+    font-size: 1.25rem;
+    color: var(--text-light-gray);
+    margin-bottom: 3rem;
+}
+
+.plan-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.guarantee-badges {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guarantee-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light-gray);
+    font-size: 0.9rem;
+}
+
+.guarantee-badges.premium .guarantee-badge {
+    color: #FFD700;
+}
+
+.badge-icon {
+    font-size: 1.2rem;
+}
+
+/* Premium Note */
+.premium-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid #FFD700;
+    border-radius: 12px;
+}
+
+.premium-note p {
+    color: #FFD700;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive for Plan Details */
+@media (max-width: 768px) {
+    .plan-detail-hero {
+        padding: 8rem 0 4rem;
+    }
+    
+    .plan-detail-price {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .plan-detail-price .amount {
+        font-size: 3rem;
+    }
+    
+    .includes-grid,
+    .premium-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    .perfect-for-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plan-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .guarantee-badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 }
