@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VANTA SCALING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="plans.html" class="nav-link">Plans</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="schedule.html" class="nav-cta">Schedule a Call</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="form-hero">
+        <div class="container">
+            <h1 class="form-title">Get in Touch</h1>
+            <p class="form-subtitle">Ready to scale? Let's start a conversation</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Let's Build Something Great</h2>
+                    <p>Whether you're ready to scale or just exploring options, we're here to help. Reach out and let's discuss how Vanta Scaling can transform your brand's growth trajectory.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p>hello@vantascaling.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">💬</div>
+                            <div class="contact-item-content">
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🌍</div>
+                            <div class="contact-item-content">
+                                <h4>Working Hours</h4>
+                                <p>Mon-Fri, 9AM-6PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <form id="contactForm" class="luxury-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                placeholder="John Doe"
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                placeholder="john@example.com"
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label for="message">Your Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message"
+                                rows="6"
+                                required
+                                placeholder="Tell us about your brand and how we can help..."
+                                class="form-input"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2 5L10 10L18 5M2 5V15L10 10M2 5L10 10M10 10V20M10 10L18 5M18 5V15L10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can I expect results?</h3>
+                    <p>Most clients see measurable improvements within 30 days. Our Trial Surge package is designed to deliver quick wins while we develop your long-term growth strategy.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Absolutely! We work with brands at all stages. Our Accelerate Basics package is perfect for early-stage brands looking to establish their growth foundation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What makes Vanta Scaling different?</h3>
+                    <p>We combine premium service with data-driven strategies. Founded by a 16-year-old entrepreneur, we bring fresh perspectives and cutting-edge tactics to every campaign.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I upgrade my plan later?</h3>
+                    <p>Yes! We encourage brands to start with what feels comfortable and scale up as they grow. Many clients begin with Trial Surge and upgrade within 60 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (hidden by default) -->
+    <div id="successMessage" class="success-overlay" style="display: none;">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h2>Message Sent Successfully!</h2>
+            <p>We'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary" onclick="window.location.href='index.html'">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+                    </div>
+                    <p class="footer-tagline">Next-Level Brand Growth for the Brave</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="plans.html">Plans</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="plans.html#trial">Trial Surge</a>
+                        <a href="plans.html#accelerate">Accelerate</a>
+                        <a href="plans.html#vanta-mode">Vanta Mode</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="schedule.html">Schedule Call</a>
+                        <a href="mailto:hello@vantascaling.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanta Scaling. All rights reserved.</p>
+                <p>Founded by Beni Misenti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

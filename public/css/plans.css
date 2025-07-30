@@ -1,0 +1,321 @@
+/* Plans Page Specific Styles */
+
+/* Plans Hero */
+.plans-hero {
+    padding: 10rem 0 4rem;
+    background: var(--primary-black);
+    position: relative;
+    overflow: hidden;
+}
+
+.plans-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+}
+
+.plans-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--text-white) 0%, var(--accent-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plans-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-light-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 4rem 0 6rem;
+    background: var(--secondary-black);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-gray);
+    border-radius: 24px;
+    padding: 2.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 212, 255, 0.3);
+}
+
+.pricing-card:hover::before {
+    opacity: 1;
+}
+
+/* Featured Card */
+.pricing-card.featured {
+    border-color: var(--accent-blue);
+    transform: scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -1px;
+    right: 2rem;
+    background: var(--accent-blue);
+    color: var(--primary-black);
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Premium Card */
+.pricing-card.premium {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(0, 212, 255, 0.02) 100%);
+}
+
+/* Card Header */
+.card-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.plan-name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.amount {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-white);
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-gray);
+}
+
+.plan-description {
+    color: var(--text-light-gray);
+    font-size: 1rem;
+}
+
+/* Card Features */
+.card-features {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: var(--text-light-gray);
+    font-size: 0.95rem;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-blue);
+    flex-shrink: 0;
+}
+
+/* Card Action */
+.card-action {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-purchase {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 1.25rem;
+}
+
+.btn-secondary {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 1.25rem;
+}
+
+.btn-premium {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
+    color: var(--primary-black);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+}
+
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 40px rgba(0, 212, 255, 0.6);
+}
+
+/* Add-ons Section */
+.addons-section {
+    padding: 6rem 0;
+    background: var(--primary-black);
+    border-top: 1px solid var(--border-gray);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light-gray);
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.addon-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-gray);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.addon-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    background: rgba(0, 212, 255, 0.02);
+}
+
+.addon-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.addon-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.addon-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 0.5rem;
+}
+
+.addon-description {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+/* Loading State */
+.btn-loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid var(--primary-black);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .plans-title {
+        font-size: 2.5rem;
+    }
+    
+    .amount {
+        font-size: 2.5rem;
+    }
+}

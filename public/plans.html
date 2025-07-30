@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans & Pricing - VANTA SCALING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/plans.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="plans.html" class="nav-link active">Plans</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="schedule.html" class="nav-cta">Schedule a Call</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Plans Hero -->
+    <section class="plans-hero">
+        <div class="container">
+            <h1 class="plans-title">Choose Your Growth Path</h1>
+            <p class="plans-subtitle">Premium packages designed to scale your brand to new heights</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Trial Surge -->
+                <div class="pricing-card" id="trial">
+                    <div class="card-header">
+                        <h3 class="plan-name">Trial Surge</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">197</span>
+                            <span class="period">one-time</span>
+                        </div>
+                        <p class="plan-description">Try-before-you-scale offer</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                30-min strategy call
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Ad account or website audit
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                3-day micro campaign
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                1 week of support
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Campaign breakdown report
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn btn-primary btn-purchase" id="checkout-trial">
+                            Purchase Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accelerate Basics -->
+                <div class="pricing-card" id="accelerate">
+                    <div class="card-header">
+                        <h3 class="plan-name">Accelerate Basics</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">800</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">For early-stage brands</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2 ad campaigns/month
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Organic growth plan
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                1 strategy call/month
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Monthly performance reports
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="schedule.html" class="btn btn-secondary">
+                            Schedule a Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Performance Expansion -->
+                <div class="pricing-card featured" id="performance">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3 class="plan-name">Performance Expansion</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">1,500</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">For scaling brands</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Up to 4 campaigns
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2 platforms (Meta + TikTok/Google)
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                A/B testing & optimization
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Weekly optimization
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                2 strategy calls/month
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="schedule.html" class="btn btn-primary">
+                            Schedule a Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vanta Mode -->
+                <div class="pricing-card premium" id="vanta-mode">
+                    <div class="card-header">
+                        <h3 class="plan-name">Vanta Mode</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">3K-5K</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Dominate your niche</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Everything in Performance Package
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Creative production
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Email/SMS strategy
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Landing page audits
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Daily Slack access
+                            </li>
+                            <li>
+                                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Custom growth dashboard
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <a href="schedule.html" class="btn btn-premium">
+                            Schedule a Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section class="addons-section">
+        <div class="container">
+            <h2 class="section-title">Power-Up Your Growth</h2>
+            <p class="section-subtitle">Add-on services to accelerate your results</p>
+            
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <div class="addon-icon">🎥</div>
+                    <h4>UGC Video</h4>
+                    <p class="addon-price">+$300/video</p>
+                    <p class="addon-description">Professional user-generated content</p>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">📧</div>
+                    <h4>Email/SMS Setup</h4>
+                    <p class="addon-price">+$700 setup, $300/mo</p>
+                    <p class="addon-description">Complete email marketing system</p>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">🎯</div>
+                    <h4>Landing Page Fixes</h4>
+                    <p class="addon-price">+$600</p>
+                    <p class="addon-description">Conversion optimization audit</p>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">🌟</div>
+                    <h4>Influencer Outreach</h4>
+                    <p class="addon-price">+$500/mo</p>
+                    <p class="addon-description">Connect with niche influencers</p>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">🚀</div>
+                    <h4>Funnel Building</h4>
+                    <p class="addon-price">Custom pricing</p>
+                    <p class="addon-description">Complete sales funnel creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+                    </div>
+                    <p class="footer-tagline">Next-Level Brand Growth for the Brave</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="plans.html">Plans</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#trial">Trial Surge</a>
+                        <a href="#accelerate">Accelerate</a>
+                        <a href="#vanta-mode">Vanta Mode</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="schedule.html">Schedule Call</a>
+                        <a href="mailto:hello@vantascaling.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanta Scaling. All rights reserved.</p>
+                <p>Founded by Beni Misenti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/plans.js"></script>
+</body>
+</html>

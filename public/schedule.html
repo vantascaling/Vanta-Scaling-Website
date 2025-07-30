@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call - VANTA SCALING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="plans.html" class="nav-link">Plans</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="schedule.html" class="nav-cta active">Schedule a Call</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Schedule Hero -->
+    <section class="form-hero">
+        <div class="container">
+            <h1 class="form-title">Schedule Your Strategy Call</h1>
+            <p class="form-subtitle">Let's discuss how we can scale your brand to new heights</p>
+        </div>
+    </section>
+
+    <!-- Schedule Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="scheduleForm" class="luxury-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                placeholder="John Doe"
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                placeholder="john@example.com"
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="website">Website (Optional)</label>
+                            <input 
+                                type="url" 
+                                id="website" 
+                                name="website"
+                                placeholder="https://example.com"
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input 
+                                type="date" 
+                                id="preferredDate" 
+                                name="preferredDate" 
+                                required
+                                class="form-input"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time *</label>
+                            <select id="preferredTime" name="preferredTime" required class="form-input">
+                                <option value="">Select a time</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="9:30 AM">9:30 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="11:30 AM">11:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="2:30 PM">2:30 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="3:30 PM">3:30 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="4:30 PM">4:30 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label for="notes">Additional Notes</label>
+                            <textarea 
+                                id="notes" 
+                                name="notes"
+                                rows="4"
+                                placeholder="Tell us about your brand and goals..."
+                                class="form-input"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-info">
+                        <div class="info-card">
+                            <div class="info-icon">📅</div>
+                            <div class="info-content">
+                                <h4>What to Expect</h4>
+                                <p>30-minute strategy call to discuss your brand's growth potential</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🚀</div>
+                            <div class="info-content">
+                                <h4>Come Prepared</h4>
+                                <p>Have your current metrics and growth goals ready to discuss</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Schedule My Call</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8 2V6M12 2V6M3 8H17M5 4H15C16.1046 4 17 4.89543 17 6V16C17 17.1046 16.1046 18 15 18H5C3.89543 18 3 17.1046 3 16V6C3 4.89543 3.89543 4 5 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (hidden by default) -->
+    <div id="successMessage" class="success-overlay" style="display: none;">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h2>Call Scheduled Successfully!</h2>
+            <p>We'll send you a confirmation email with all the details.</p>
+            <button class="btn btn-primary" onclick="window.location.href='index.html'">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+                    </div>
+                    <p class="footer-tagline">Next-Level Brand Growth for the Brave</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="plans.html">Plans</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="plans.html#trial">Trial Surge</a>
+                        <a href="plans.html#accelerate">Accelerate</a>
+                        <a href="plans.html#vanta-mode">Vanta Mode</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="schedule.html">Schedule Call</a>
+                        <a href="mailto:hello@vantascaling.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanta Scaling. All rights reserved.</p>
+                <p>Founded by Beni Misenti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>
