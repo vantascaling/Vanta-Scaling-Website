@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Surge - VANTA SCALING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/plans.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="plans.html" class="nav-link">Plans</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="schedule.html" class="nav-cta">Schedule a Call</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Plan Detail Hero -->
+    <section class="plan-detail-hero">
+        <div class="container">
+            <div class="plan-detail-content">
+                <div class="plan-badge">Perfect for Testing</div>
+                <h1 class="plan-detail-title">Trial Surge</h1>
+                <div class="plan-detail-price">
+                    <span class="currency">$</span>
+                    <span class="amount">197</span>
+                    <span class="period">one-time</span>
+                </div>
+                <p class="plan-detail-subtitle">Try-before-you-scale offer designed to give you a taste of what Vanta Scaling can do for your brand</p>
+                <div class="plan-detail-cta">
+                    <button class="btn btn-primary btn-large btn-purchase" id="checkout-trial">
+                        Purchase Now - $197
+                    </button>
+                    <p class="guarantee-text">✨ 100% satisfaction guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="plan-includes">
+        <div class="container">
+            <h2 class="section-title">What's Included</h2>
+            <div class="includes-grid">
+                <div class="include-item">
+                    <div class="include-icon">•</div>
+                    <h3>30-Minute Strategy Call</h3>
+                    <p>Deep-dive consultation where we analyze your current brand position, identify growth opportunities, and create a custom roadmap for scaling your business.</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-icon">•</div>
+                    <h3>Complete Ad/Site Audit</h3>
+                    <p>Comprehensive analysis of your current advertising campaigns and website performance, identifying conversion bottlenecks and optimization opportunities.</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-icon">•</div>
+                    <h3>3-Day Micro Campaign</h3>
+                    <p>We'll launch a targeted micro-campaign to test your market response and gather valuable data about your audience's behavior and preferences.</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-icon">•</div>
+                    <h3>1 Week of Support</h3>
+                    <p>Direct access to our team for questions, guidance, and optimization suggestions during your trial period.</p>
+                </div>
+                <div class="include-item">
+                    <div class="include-icon">•</div>
+                    <h3>Campaign Breakdown Report</h3>
+                    <p>Detailed analysis of your micro-campaign performance with actionable insights and recommendations for future scaling strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-timeline">
+        <div class="container">
+            <h2 class="section-title">Your 7-Day Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Day 1: Strategy Call</h3>
+                        <p>We'll schedule your 30-minute strategy session within 24 hours of purchase</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Day 2: Audit & Setup</h3>
+                        <p>Complete analysis of your current setup and micro-campaign preparation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Days 3-5: Campaign Launch</h3>
+                        <p>Your micro-campaign goes live with daily monitoring and optimization</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Days 6-7: Analysis & Report</h3>
+                        <p>Campaign analysis, report delivery, and scaling recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For -->
+    <section class="perfect-for">
+        <div class="container">
+            <h2 class="section-title">Perfect For</h2>
+            <div class="perfect-for-grid">
+                <div class="perfect-for-item">
+                    <div class="perfect-for-icon">•</div>
+                    <h3>New Brands</h3>
+                    <p>Just starting out and want to test the waters with professional marketing</p>
+                </div>
+                <div class="perfect-for-item">
+                    <div class="perfect-for-icon">•</div>
+                    <h3>Skeptical Entrepreneurs</h3>
+                    <p>Want to see results before committing to a monthly retainer</p>
+                </div>
+                <div class="perfect-for-item">
+                    <div class="perfect-for-icon">•</div>
+                    <h3>Strategy Seekers</h3>
+                    <p>Need expert guidance on their current marketing approach</p>
+                </div>
+                <div class="perfect-for-item">
+                    <div class="perfect-for-icon">•</div>
+                    <h3>Growth-Ready Brands</h3>
+                    <p>Ready to scale but unsure of the best approach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Trial Surge gave us incredible insights. In just 3 days, we saw a 40% improvement in our ad performance. Worth every penny!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>Founder, Luxe Beauty Co.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I was skeptical about agencies, but the Trial Surge proved Vanta's expertise. The strategy call alone was worth $197."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Marcus Rodriguez</strong>
+                        <span>CEO, TechFlow Solutions</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The detailed report we received was a game-changer. It showed us exactly where we were losing money and how to fix it."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emma Thompson</strong>
+                        <span>Marketing Director, GreenLife</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="plan-cta-section">
+        <div class="container">
+            <div class="plan-cta-content">
+                <h2>Ready to Experience Vanta Scaling?</h2>
+                <p>Join 30+ brands who've already discovered the power of professional growth strategies</p>
+                <div class="plan-cta-buttons">
+                    <button class="btn btn-primary btn-large btn-purchase" id="checkout-trial-bottom">
+                        Get Started - $197
+                    </button>
+                    <a href="schedule.html" class="btn btn-secondary btn-large">
+                        Schedule a Call First
+                    </a>
+                </div>
+                <div class="guarantee-badges">
+                    <div class="guarantee-badge">
+                        <span class="badge-icon">✅</span>
+                        <span>100% Satisfaction Guarantee</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <span class="badge-icon">⚡</span>
+                        <span>Results Within 7 Days</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <span class="badge-icon">🔒</span>
+                        <span>Secure Payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VANTA</span><span class="logo-accent">SCALING</span>
+                    </div>
+                    <p class="footer-tagline">Next-Level Brand Growth for the Brave</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="plans.html">Plans</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="plan-trial-surge.html">Trial Surge</a>
+                        <a href="plan-accelerate.html">Accelerate</a>
+                        <a href="plan-vanta-mode.html">Vanta Mode</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="schedule.html">Schedule Call</a>
+                        <a href="mailto:hello@vantascaling.com">Email Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vanta Scaling. All rights reserved.</p>
+                <p>Founded by Beni Misenti</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/plans.js"></script>
+</body>
+</html>
